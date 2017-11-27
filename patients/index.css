@@ -1,0 +1,120 @@
+* {
+    font-family: 'Raleway', sans-serif !important;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    position: absolute;
+    height: 60px;
+    width: 100vw;
+    background: white;
+}
+
+#header img {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+#header h3 {
+    position: relative;
+    float: right;
+    height: 20px;
+    top: 20px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    #sidebar {
+        position: absolute;
+        height: calc(100vh - 60px);
+        width: 400px;
+        margin-top: 60px;
+        background: #f9f9f9;
+    }
+    #title {
+        position: relative;
+        height: 36px;
+        top: 0;
+        background: #f9f9f9;
+        padding: 20px;
+    }
+    #title h1 {
+        position: relative;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 800;
+        width: 300px;
+        height: 36px;
+        color: #ff2d55;
+    }
+    #title button {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        float: right;
+        width: 50px;
+        height: 36px;
+    }
+    #patients div {
+        position: relative;
+        height: calc(100vh - 136px);
+        overflow-y: scroll;
+    }
+    #patients button {
+        outline: none;
+        border: none;
+        background: none;
+        padding: 20px;
+        padding-top: 0px;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    #patients button:hover {
+        color: #ff2d55;
+        cursor: pointer;
+    }
+    #patients button h2 {}
+    #detail {
+        position: absolute;
+        height: calc(100vh - 60px);
+        width: calc(100vw - 400px);
+        margin-top: 60px;
+        left: 400px;
+        background: #eee;
+    }
+    #patientdetail {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+    #patientdetail .label {
+        position: relative;
+        display: inline-block;
+        width: 130px;
+        font-weight: bold;
+    }
+    #patientdetail .value {
+        position: relative;
+        width: 50%;
+        font-weight: 400;
+    }
+    #patientdetail #patient {
+        position: relative;
+        padding: 20px;
+    }
+    #patientdetail::after {
+        content: "";
+        background: #666;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+    }
+    #donors {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+}
