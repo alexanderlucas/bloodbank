@@ -57,7 +57,7 @@
         font-weight: 800;
         width: 300px;
         height: 36px;
-        color: #ff2d55;
+        color: #1E99FF;
     }
     #title button {
         position: relative;
@@ -67,12 +67,12 @@
         width: 50px;
         height: 36px;
     }
-    #patients div {
+    #donors div {
         position: relative;
         height: calc(100vh - 136px);
         overflow-y: scroll;
     }
-    #patients button {
+    #donors button {
         outline: none;
         border: none;
         background: none;
@@ -81,11 +81,11 @@
         font-weight: 400;
         font-size: 24px;
     }
-    #patients button:hover {
-        color: #ff2d55;
+    #donors button:hover {
+        color: #1E99FF;
         cursor: pointer;
     }
-    #patients button h2 {}
+    #donors button h2 {}
     #detail {
         position: absolute;
         height: calc(100vh - 60px);
@@ -94,27 +94,27 @@
         left: 400px;
         background: #eee;
     }
-    #patientdetail {
+    #donordetail {
         position: relative;
         width: 100%;
         height: 50%;
     }
-    #patientdetail .label {
+    #donordetail .label {
         position: relative;
         display: inline-block;
         width: 130px;
         font-weight: bold;
     }
-    #patientdetail .value {
+    #donordetail .value {
         position: relative;
         width: 50%;
         font-weight: 400;
     }
-    #patientdetail #patient {
+    #donordetail #donor {
         position: relative;
         padding: 20px;
     }
-    #patientdetail::after {
+    #donordetail::after {
         content: "";
         background: #666;
         position: absolute;
@@ -126,38 +126,5 @@
         position: relative;
         width: 100%;
         height: 50%;
-    }
-    #donors #donorlist {
-        position: relative;
-        padding: 20px;
-    }
-    #donors button {
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 20px;
-    }
-    #donors button:hover {
-        color: #1E99FF;
-        cursor: pointer;
-    }
-    #donor-card {
-        position: absolute;
-        display: none;
-        width: 64%;
-        height: 50%;
-        left: 18%;
-        top: 25%;
-        background: #f9f9f9;
-        z-index: 100;
-        border-radius: 10px;
-    }
-    #blur {
-        position: absolute;
-        display: none;
-        width: 100%;
-        height: 100%;
-        background: rgba(200, 200, 200, 0.92);
-        z-index: 99;
     }
 }

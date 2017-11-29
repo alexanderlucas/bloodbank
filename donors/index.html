@@ -21,30 +21,24 @@
 </head>
 
 <body>
-    <div id="header"><button onclick="gotoDonors()"><img src="../img/tint-drop.png" /></button>
+    <div id="header"><button onclick="gotoPatients()"><img src="../img/tint-drop-blue.png" /></button>
         <h3>Bloodbank Database</h3>
-    </div>
-    <div id="donor-card">
-
-    </div>
-    <div id="blur">
-
     </div>
     <div id="sidebar">
         <div id="title">
-            <h1>Patients</h1>
+            <h1>Donors</h1>
             <button>X</button>
         </div>
-        <div id="patients">
+        <div id="donors">
             <div>
-                <button onclick="displayPatient(this)" id="my-button">George Washington</button>
-                <button onclick="displayPatient(this)" id=1>George Washington</button>
-                <button onclick="displayPatient(this)" id=2>George Washington</button>
-                <button onclick="displayPatient(this)" id=3>George Washington</button>
-                <button onclick="displayPatient(this)" id=4>George Washington</button>
-                <button onclick="displayPatient(this)" id=5>George Washington</button>
-                <button onclick="displayPatient(this)" id=6>George Washington</button>
-                <button onclick="displayPatient(this)" id=7>George Washington</button>
+                <button onclick="displayDonor(this)" id="my-button">George Washington</button>
+                <button onclick="displayDonor(this)" id=1>George Washington</button>
+                <button onclick="displayDonor(this)" id=2>George Washington</button>
+                <button onclick="displayDonor(this)" id=3>George Washington</button>
+                <button onclick="displayDonor(this)" id=4>George Washington</button>
+                <button onclick="displayDonor(this)" id=5>George Washington</button>
+                <button onclick="displayDonor(this)" id=6>George Washington</button>
+                <button onclick="displayDonor(this)" id=7>George Washington</button>
 
 
             </div>
@@ -52,8 +46,8 @@
         </div>
     </div>
     <div id="detail">
-        <div id="patientdetail">
-            <div id="patient">
+        <div id="donordetail">
+            <div id="donor">
                 <h1 id="name">George Washington</h1> <br>
                 <div>
                     <span class="label">Age: <span class="value" id="age">35</span></span> <span class="label">Sex: <span class="value" id="sex">Male</span></span> <br>
@@ -64,13 +58,7 @@
             </div>
 
         </div>
-        <div id="donors">
-            <div id="donorlist">
-                <h1>Potential Donors</h1> <br>
-                <button onclick="displayPatient(this)" id=1>George Washington</button>
-            </div>
-
-        </div>
+        <div id="donors"></div>
     </div>
 </body>
 

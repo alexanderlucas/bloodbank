@@ -6,3 +6,7 @@ function displayPatient(patientButton) {
     alert(name);
 
 }
+
+function gotoDonors() {
+    location.href = "../donors/index.html";
+}
