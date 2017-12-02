@@ -53,7 +53,7 @@
     #title h1 {
         position: relative;
         display: inline-block;
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 800;
         width: 300px;
         height: 36px;
@@ -76,6 +76,8 @@
         outline: none;
         border: none;
         background: none;
+        width: 80%;
+        text-align: left;
         padding: 20px;
         padding-top: 0px;
         font-weight: 400;
@@ -99,10 +101,25 @@
         width: 100%;
         height: 50%;
     }
+    #patientdetail h1 {
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    #patientdetail h1 #btype {
+        color: #ff2d55;
+        font-weight: 800;
+        padding: 10px;
+    }
+    #patientdetail h3 {
+        font-weight: 700;
+    }
+    #patientdetail div {
+        font-size: 20px;
+    }
     #patientdetail .label {
         position: relative;
         display: inline-block;
-        width: 130px;
+        width: 200px;
         font-weight: bold;
     }
     #patientdetail .value {
@@ -122,14 +139,39 @@
         height: 1px;
         width: 100%;
     }
+    #patientdetail #center {
+        position: relative;
+        width: 50%;
+        height: 10%;
+        left: 25%;
+        top: 45%;
+        vertical-align: center;
+        text-align: center;
+        font-weight: 300;
+    }
+    .green {
+        color: #2dc937;
+    }
+    .red {
+        color: #cc3232;
+    }
+    .yellow {
+        color: #FFEB5A;
+    }
     #donors {
         position: relative;
         width: 100%;
         height: 50%;
     }
+    #donors h1 {
+        padding: 20px;
+        padding-bottom: 0;
+        height: 20px;
+    }
     #donors #donorlist {
         position: relative;
         padding: 20px;
+        height: calc(100% - 100px);
     }
     #donors button {
         border: none;
@@ -140,6 +182,16 @@
     #donors button:hover {
         color: #1E99FF;
         cursor: pointer;
+    }
+    #donors #donorcenter {
+        position: relative;
+        width: 50%;
+        height: 10%;
+        left: 25%;
+        top: 45%;
+        vertical-align: center;
+        text-align: center;
+        font-weight: 300;
     }
     #donor-card {
         position: absolute;
@@ -161,3 +213,5 @@
         z-index: 99;
     }
 }
+
+;

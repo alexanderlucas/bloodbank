@@ -53,7 +53,7 @@
     #title h1 {
         position: relative;
         display: inline-block;
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 800;
         width: 300px;
         height: 36px;
@@ -77,6 +77,8 @@
         border: none;
         background: none;
         padding: 20px;
+        width: 80%;
+        text-align: left;
         padding-top: 0px;
         font-weight: 400;
         font-size: 24px;
