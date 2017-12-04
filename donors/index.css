@@ -101,10 +101,25 @@
         width: 100%;
         height: 50%;
     }
+    #donordetail h1 {
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    #donordetail h1 #btype {
+        color: #ff2d55;
+        font-weight: 800;
+        padding: 10px;
+    }
+    #donordetail h3 {
+        font-weight: 700;
+    }
+    #donordetail div {
+        font-size: 20px;
+    }
     #donordetail .label {
         position: relative;
         display: inline-block;
-        width: 130px;
+        width: 100%;
         font-weight: bold;
     }
     #donordetail .value {
@@ -114,7 +129,36 @@
     }
     #donordetail #donor {
         position: relative;
+        display: none;
+        width: calc(50% - 40px);
+        height: calc(100% - 40px);
         padding: 20px;
+        float: left;
+        margin: 0;
+    }
+    #donordetail #donorstuff {
+        position: relative;
+        display: none;
+        background: none;
+        width: calc(50% - 40px);
+        padding: 20px;
+        height: calc(100% - 40px);
+        margin: 0;
+        float: right;
+    }
+    #donordetail #donorstuff h1 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    #donordetail #donorstuff p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #donordetail #donorstuff .stuffdiv {
+        position: relative;
+        display: block;
+        height: 50%;
+        width: 100%;
     }
     #donordetail::after {
         content: "";
@@ -124,9 +168,79 @@
         height: 1px;
         width: 100%;
     }
-    #donors {
+    #donordetail #center {
+        position: relative;
+        width: 50%;
+        height: 10%;
+        left: 25%;
+        top: 45%;
+        vertical-align: center;
+        text-align: center;
+        font-weight: 300;
+    }
+    .green {
+        color: #2dc937;
+    }
+    .red {
+        color: #cc3232;
+    }
+    .yellow {
+        color: #FFEB5A;
+    }
+    /* #pot-pats {
         position: relative;
         width: 100%;
         height: 50%;
+    }
+    #pot-pats #meds {
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    #pot-pats h1 {
+        font-weight: 400;
+        margin: 20px;
+    }
+    #pot-pats #disease {
+        position: relative;
+        height: 50%;
+        width: 100%;
+    } */
+    #pot-pats {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+    #pot-pats h1 {
+        padding: 20px;
+        padding-bottom: 0;
+        height: 20px;
+    }
+    #pot-pats #donorlist {
+        position: relative;
+        padding: 20px;
+        height: calc(100% - 100px);
+        overflow-y: scroll;
+    }
+    #pot-pats button {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+    #pot-pats button:hover {
+        color: #1E99FF;
+        cursor: pointer;
+    }
+    #pot-pats #donorcenter {
+        position: relative;
+        width: 50%;
+        height: 10%;
+        left: 25%;
+        top: 45%;
+        vertical-align: center;
+        text-align: center;
+        font-weight: 300;
     }
 }

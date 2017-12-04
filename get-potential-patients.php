@@ -14,10 +14,11 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"ajax_demo");
-$sql="SELECT * FROM Donor";
+$sql="SELECT DISTINCT Patient.name, Patient.pid
+FROM Donor, Patient
+WHERE Donor.donor_id = ". $q." AND Donor.blood_type = Patient.blood_type
+";
 $result = mysqli_query($con,$sql);
-
-
 // echo "<table>
 // <tr>
 // <th>Firstname</th>
@@ -27,8 +28,7 @@ $result = mysqli_query($con,$sql);
 // <th>Job</th>
 // </tr>";
 while($row = mysqli_fetch_array($result)) {
-    echo "<button onclick='displayDonor(this)' id=" . $row["donor_id"] .">" . $row['name'] . "</button>";
-    
+    echo "<button onclick='displayPatient(this)' id=" . $row["pid"] .">" . $row['name'] ."</button> <br/>";
 }
 // echo "</table>";
 mysqli_close($con);

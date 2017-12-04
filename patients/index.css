@@ -177,7 +177,8 @@
         border: none;
         outline: none;
         background: none;
-        font-size: 20px;
+        font-size: 24px;
+        padding-bottom: 5px;
     }
     #donors button:hover {
         color: #1E99FF;
@@ -196,22 +197,49 @@
     #donor-card {
         position: absolute;
         display: none;
-        width: 64%;
-        height: 50%;
-        left: 18%;
-        top: 25%;
+        padding: 20px;
+        width: 40%;
+        height: 40%;
+        left: 30%;
+        top: 30%;
         background: #f9f9f9;
         z-index: 100;
         border-radius: 10px;
     }
+    #donor-card h1 {
+        font-weight: 400;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    #donor-card h1 span {
+        font-size: 40px;
+        padding-bottom: 10px;
+        color: #ff2d55;
+        font-weight: 800;
+        padding: 10px;
+    }
+    #donor-card span {
+        font-size: 22px;
+    }
+    #donor-card .label {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        font-weight: bold;
+    }
+    #donor-card .value {
+        position: relative;
+        width: 50%;
+        font-weight: 400;
+    }
     #blur {
         position: absolute;
         display: none;
+        border: none;
+        outline: none;
         width: 100%;
         height: 100%;
         background: rgba(200, 200, 200, 0.92);
         z-index: 99;
     }
 }
-
-;

@@ -14,7 +14,7 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"ajax_demo");
-$sql="SELECT * FROM Patient WHERE pid = '".$q."'";
+$sql="SELECT * FROM Donor WHERE donor_id = '".$q."'";
 
 $result = mysqli_query($con,$sql);
 
