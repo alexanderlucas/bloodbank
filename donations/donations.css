@@ -57,7 +57,7 @@
         font-weight: 800;
         width: 300px;
         height: 36px;
-        color: #1E99FF;
+        color: #ff2d55;
     }
     #title button {
         position: relative;
@@ -99,13 +99,13 @@
     #donordetail {
         position: relative;
         width: 100%;
-        height: 50%;
+        height: calc(100% - 60px);
     }
     #donordetail h1 {
         font-weight: 400;
         padding-bottom: 10px;
     }
-    #donordetail h1 #btype {
+    #btype {
         color: #ff2d55;
         font-weight: 800;
         padding: 10px;
@@ -230,7 +230,7 @@
         padding-bottom: 5px;
     }
     #pot-pats button:hover {
-        color: #1E99FF;
+        color: #ff2d55;
         cursor: pointer;
     }
     #pot-pats #donorcenter {

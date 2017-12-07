@@ -30,6 +30,34 @@ function displayDonor(donorButton) {
 
 }
 
+function displayPatient(patientButton) {
+    if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("donor-card").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "get-patient-info.php?q=" + patientButton.id, true);
+    xmlhttp.send();
+    document.getElementById("donor-card").style.display = "block";
+    document.getElementById("blur").style.display = "block";
+
+    // alert(donorButton.id);
+}
+
+function unDisplay() {
+    document.getElementById("donor-card").style.display = "none";
+    document.getElementById("blur").style.display = "none";
+
+}
+
+
 function getPatients(donor_id) {
     if (window.XMLHttpRequest) {
         // code for IE7+, Firefox, Chrome, Opera, Safari
